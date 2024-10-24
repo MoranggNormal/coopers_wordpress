@@ -1,8 +1,3 @@
-<?php
-$upload_dir = wp_get_upload_dir();
-$upload_url = $upload_dir['baseurl'];
-?>
-
 <section class="hero-section">
     <div class="hero-content">
         <h1 class="hero-title">
