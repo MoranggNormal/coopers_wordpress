@@ -1,0 +1,38 @@
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px;
+
+    @media (min-width: 768px) {
+        padding: 40px 60px;
+    }
+
+    @media (min-width: 1024px) {
+        padding: 40px 80px;
+    }
+}
+
+.site-branding .site-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.auth-btns {
+    .auth-btn {
+        width: 80px;
+        height: 40px;
+        font-size: 14px;
+        font-weight: bold;
+
+        @media (min-width: 768px) {
+            width: 120px;
+            height: 40px;
+        }
+    }
+}

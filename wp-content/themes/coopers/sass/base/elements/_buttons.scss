@@ -19,3 +19,15 @@ input[type="submit"] {
 		border-color: $color__border-button-focus;
 	}
 }
+
+.coopers-btn{
+	background-color: black;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	cursor: pointer;
+	transition: all 0.2s ease;
+
+	&:hover {
+		transform: translateY(-0.5rem);
+	}
+}
