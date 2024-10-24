@@ -1018,7 +1018,7 @@ textarea {
 	position: absolute;
 	right: -200px;
 	top: 24px;
-	z-index: -20;
+	z-index: -21;
 	object-fit: contain;
 	width: 634px;
 }
@@ -1040,6 +1040,52 @@ textarea {
 	.hero-section .hero-background-2 {
 		display: block;
 	}
+}
+
+/* TaskInfo
+--------------------------------------------- */
+#to-do-list {
+	width: 100%;
+	height: 420px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#to-do-list .background {
+	position: absolute;
+	width: 200%;
+	height: 75%;
+	background-color: black;
+	transform: rotate(-4deg);
+	z-index: -21;
+}
+
+#to-do-list h1 {
+	font-weight: bold;
+	font-family: "Poppins", sans-serif;
+	color: white;
+	font-size: 60px;
+	line-height: 60px;
+	text-align: center;
+	text-decoration: underline;
+	text-underline-offset: 16px;
+	text-decoration-thickness: 2px;
+	text-decoration-color: green;
+}
+
+#to-do-list p {
+	margin-top: 8px;
+	font-weight: normal;
+	color: white;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+}
+
+#to-do-list p br {
+	display: block;
 }
 
 /*--------------------------------------------------------------

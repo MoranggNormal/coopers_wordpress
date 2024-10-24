@@ -93,11 +93,10 @@
         position: absolute;
         right: -200px;
         top: 24px;
-        z-index: -20;
+        z-index: -21;
         object-fit: contain;
         width: 634px;
 
-        
         @media (min-width: 1280px) {
         right: 0;
     }
