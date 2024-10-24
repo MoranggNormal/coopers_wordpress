@@ -20,7 +20,7 @@ services:
     container_name: wordpress
     restart: always
     ports:
-      - "8080:80" 
+      - "8080:80"
     environment:
       WORDPRESS_DB_HOST: ${MYSQL_HOST}
       WORDPRESS_DB_USER: ${MYSQL_USER}
@@ -32,6 +32,19 @@ services:
     depends_on:
       - db
 
+  nodejs:
+    image: node:17.9.1
+    container_name: nodejs
+    working_dir: /var/www/html/wp-content/themes/coopers
+    volumes:
+      - ./wp-content:/var/www/html/wp-content
+    # command: npm run watch
+    command: ./watch_sass.sh
+    restart: always
+    depends_on:
+      - wordpress
+
 volumes:
   db_data:
+
 
