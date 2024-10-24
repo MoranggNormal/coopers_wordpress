@@ -63,6 +63,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
+	overflow-x: hidden;
 }
 
 /* Sections
@@ -72,6 +73,7 @@ html {
  */
 body {
 	margin: 0;
+	overflow-x: hidden;
 }
 
 /**
@@ -903,6 +905,140 @@ textarea {
 	.auth-btns .auth-btn {
 		width: 120px;
 		height: 40px;
+	}
+}
+
+/* Hero
+--------------------------------------------- */
+.hero-section {
+	position: relative;
+	width: 100vw;
+	height: 734px;
+	display: flex;
+	margin-top: 24px;
+	padding-left: 25px;
+}
+
+@media (min-width: 640px) {
+	.hero-section {
+		padding-left: 40px;
+	}
+}
+
+@media (min-width: 768px) {
+	.hero-section {
+		padding-left: 80px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.hero-section {
+		padding-left: 120px;
+	}
+}
+
+@media (min-width: 1536px) {
+	.hero-section {
+		padding-left: 400px;
+	}
+}
+
+@media (min-width: 1920px) {
+	.hero-section {
+		padding-left: 550px;
+	}
+}
+
+.hero-section .hero-content {
+	width: 55%;
+	margin-top: 208px;
+}
+
+.hero-section .hero-content .hero-title {
+	font-weight: bold;
+	font-size: 60px;
+	line-height: 64px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.hero-section .hero-content .hero-title .hero-subtitle {
+	position: absolute;
+	top: 60px;
+	font-weight: normal;
+	font-size: 25px;
+	color: green;
+}
+
+.hero-section .hero-content .hero-description {
+	position: absolute;
+	top: 384px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+@media (min-width: 640px) {
+	.hero-section .hero-content .hero-description {
+		font-size: 20px;
+	}
+}
+
+.hero-section .hero-content .hero-button {
+	position: absolute;
+	top: 464px;
+	z-index: 20;
+	font-weight: bold;
+	color: white;
+	font-size: 24px;
+	width: 240px;
+	height: 64px;
+	background-color: green;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.hero-section .hero-content .hero-button:hover {
+	background-color: #004d00;
+}
+
+.hero-section .hero-arrow-down {
+	position: absolute;
+	bottom: -8px;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 8px;
+}
+
+.hero-section .hero-background {
+	position: absolute;
+	right: -200px;
+	top: 24px;
+	z-index: -20;
+	object-fit: contain;
+	width: 634px;
+}
+
+@media (min-width: 1280px) {
+	.hero-section .hero-background {
+		right: 0;
+	}
+}
+
+.hero-section .hero-background-2 {
+	display: none;
+	position: absolute;
+	margin-top: 156px;
+	left: 61%;
+}
+
+@media (min-width: 1280px) {
+	.hero-section .hero-background-2 {
+		display: block;
 	}
 }
 
