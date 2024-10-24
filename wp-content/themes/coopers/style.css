@@ -1051,6 +1051,7 @@ textarea {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
 }
 
 #to-do-list .background {
