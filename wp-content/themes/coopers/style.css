@@ -401,6 +401,10 @@ textarea {
 	line-height: 1.5;
 }
 
+a {
+	text-decoration: none;
+}
+
 font-poppins {
 	font-family: 'Poppins' !important;
 }
@@ -1198,6 +1202,179 @@ textarea {
 	position: absolute;
 	left: 0;
 	z-index: -20;
+}
+
+/* Blog
+--------------------------------------------- */
+.blog-section {
+	margin-top: 80px;
+	margin-bottom: 320px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.blog-section .blog-container {
+	position: relative;
+	width: 320px;
+	height: 520px;
+	background-color: #4ac959;
+	padding: 10px 34px;
+	border-radius: 10px;
+}
+
+@media (min-width: 640px) {
+	.blog-section .blog-container {
+		width: 640px;
+	}
+}
+
+@media (min-width: 740px) {
+	.blog-section .blog-container {
+		width: 740px;
+	}
+}
+
+@media (min-width: 800px) {
+	.blog-section .blog-container {
+		width: 800px;
+	}
+}
+
+@media (min-width: 1300px) {
+	.blog-section .blog-container {
+		width: 1300px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.blog-section .blog-container {
+		padding: 20px;
+	}
+}
+
+.blog-section .blog-container .swiper {
+	position: absolute;
+	top: 28%;
+	padding-bottom: 3em !important;
+	max-width: 280px;
+}
+
+@media (min-width: 640px) {
+	.blog-section .blog-container .swiper {
+		max-width: 640px;
+	}
+}
+
+@media (min-width: 768px) {
+	.blog-section .blog-container .swiper {
+		max-width: 768px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.blog-section .blog-container .swiper {
+		max-width: 1200px;
+	}
+}
+
+@media (min-width: 1600px) {
+	.blog-section .blog-container .swiper {
+		max-width: 1600px;
+	}
+}
+
+.blog-section .blog-container .swiper-pagination-bullet {
+	width: 24px !important;
+	height: 24px !important;
+}
+
+.blog-section .blog-container .swiper-pagination-bullet-active {
+	background-color: #4ac959 !important;
+}
+
+.blog-section .blog-container .blog-title {
+	font-weight: bold;
+	font-size: 32px;
+	color: white;
+}
+
+@media (min-width: 1024px) {
+	.blog-section .blog-container .blog-title {
+		font-size: 48px;
+	}
+}
+
+.blog-section .post {
+	width: 260px;
+	height: 430px;
+	background-color: white;
+	border-radius: 16px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 1024px) {
+	.blog-section .post {
+		width: 360px;
+	}
+}
+
+.blog-section .post .post-image {
+	width: 100%;
+	height: 50%;
+	position: relative;
+}
+
+.blog-section .post .post-image .image {
+	height: 100%;
+}
+
+.blog-section .post .post-image .image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+}
+
+.blog-section .post .post-image .coopers-icon {
+	position: absolute;
+	bottom: -12%;
+	right: 16px;
+}
+
+.blog-section .post .post-content {
+	width: 100%;
+	height: 50%;
+	padding: 24px;
+}
+
+.blog-section .post .post-content .post-context {
+	padding: 4px 12px;
+	border: 1px solid #9499B3;
+	border-radius: 16px;
+}
+
+.blog-section .post .post-content .post-context a {
+	font-size: 12px;
+	color: #9499B3;
+}
+
+@media (min-width: 1024px) {
+	.blog-section .post .post-content .post-context a {
+		font-size: 16px;
+	}
+}
+
+.blog-section .post .post-content .post-excerpt {
+	max-width: 80%;
+	font-weight: 400;
+}
+
+.blog-section .post .post-content .read-more {
+	color: #4ac959;
+	font-size: 16;
+	font-weight: 700;
 }
 
 /*--------------------------------------------------------------

@@ -22,6 +22,7 @@ get_header();
 	get_template_part('hero');
 	get_template_part('taskinfo');
 	get_template_part('planlist');
+	get_template_part('blog');
 	?>
 
 
