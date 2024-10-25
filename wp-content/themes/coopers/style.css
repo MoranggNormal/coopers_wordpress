@@ -63,7 +63,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
-	overflow-x: hidden;
 }
 
 /* Sections
@@ -73,7 +72,6 @@ html {
  */
 body {
 	margin: 0;
-	overflow-x: hidden;
 }
 
 /**
@@ -368,6 +366,10 @@ h3, h4 {
 	margin: 0;
 }
 
+html, body {
+	overflow-x: hidden;
+}
+
 /* Box sizing
 --------------------------------------------- */
 /* Inherit box-sizing to more easily change it's value on a component level.
@@ -394,9 +396,13 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
+}
+
+font-poppins {
+	font-family: 'Poppins' !important;
 }
 
 h1,
@@ -1145,7 +1151,7 @@ textarea {
 
 .plan-list .card-list .top-text h3 {
 	font-size: 40px;
-	font-weight: 600;
+	font-weight: bold;
 }
 
 .plan-list .card-list .top-text h4 {

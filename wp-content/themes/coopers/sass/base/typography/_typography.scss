@@ -10,5 +10,9 @@ textarea {
 	line-height: $font__line-height-body;
 }
 
+font-poppins {
+    font-family: 'Poppins' !important;
+}
+
 @import "headings";
 @import "copy";
