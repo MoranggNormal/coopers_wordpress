@@ -961,7 +961,7 @@ textarea {
 
 .hero-section .hero-content .hero-title {
 	font-weight: bold;
-	font-size: 60px;
+	font-size: 80px;
 	line-height: 64px;
 	display: flex;
 	flex-direction: column;
@@ -972,7 +972,7 @@ textarea {
 	position: absolute;
 	top: 60px;
 	font-weight: normal;
-	font-size: 25px;
+	font-size: 60px;
 	color: #4ac959;
 }
 
@@ -985,7 +985,7 @@ textarea {
 
 @media (min-width: 640px) {
 	.hero-section .hero-content .hero-description {
-		font-size: 20px;
+		font-size: 24px;
 	}
 }
 
@@ -996,19 +996,25 @@ textarea {
 	font-weight: bold;
 	color: white;
 	font-size: 24px;
+	line-height: 29px;
 	width: 240px;
+	text-decoration: none;
 	height: 64px;
 	background-color: #4ac959;
 	border-radius: 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
 	transition: all 0.3s ease;
+	display: grid;
+	place-content: center;
+}
+
+@media (min-width: 768px) {
+	.hero-section .hero-content .hero-button {
+		width: 300px;
+	}
 }
 
 .hero-section .hero-content .hero-button:hover {
-	background-color: #33ad42;
+	transform: translateY(-4px);
 }
 
 .hero-section .hero-arrow-down {
@@ -1145,7 +1151,7 @@ textarea {
 .plan-list .card-list .top-text {
 	text-align: center;
 	text-wrap: wrap;
-	padding: 1.5rem 0;
+	padding: 2.3rem 0;
 	margin: 0 0.5rem;
 }
 

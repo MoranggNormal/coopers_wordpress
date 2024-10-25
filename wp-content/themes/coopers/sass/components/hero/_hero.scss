@@ -32,7 +32,7 @@
 
         .hero-title {
             font-weight: bold;
-            font-size: 60px;
+            font-size: 80px;
             line-height: 64px;
             display: flex;
             flex-direction: column;
@@ -42,7 +42,7 @@
                 position: absolute;
                 top: 60px;
                 font-weight: normal;
-                font-size: 25px;
+                font-size: 60px;
                 color: $primary;
             }
         }
@@ -54,7 +54,7 @@
             font-size: 18px;
 
             @media (min-width: 640px) {
-                font-size: 20px;
+                font-size: 24px;
             }
         }
 
@@ -65,20 +65,26 @@
             font-weight: bold;
             color: white;
             font-size: 24px;
+            line-height: 29px;
             width: 240px;
+            text-decoration: none;
+
+            @media (min-width: 768px) {
+                width: 300px;
+            }
+
             height: 64px;
             background-color: $primary;
             border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
             transition: all 0.3s ease;
+            display: grid;
+            place-content: center;
 
             &:hover {
-                background-color: darken($primary, 10%);
+                transform: translateY(-4px);
             }
         }
+
     }
 
     .hero-arrow-down {
@@ -98,8 +104,8 @@
         width: 634px;
 
         @media (min-width: 1280px) {
-        right: 0;
-    }
+            right: 0;
+        }
     }
 
     .hero-background-2 {
