@@ -43,7 +43,7 @@
                 top: 60px;
                 font-weight: normal;
                 font-size: 25px;
-                color: green;
+                color: $primary;
             }
         }
 
@@ -67,7 +67,7 @@
             font-size: 24px;
             width: 240px;
             height: 64px;
-            background-color: green;
+            background-color: $primary;
             border-radius: 10px;
             display: flex;
             justify-content: center;
@@ -76,7 +76,7 @@
             transition: all 0.3s ease;
 
             &:hover {
-                background-color: darken(green, 10%);
+                background-color: darken($primary, 10%);
             }
         }
     }
