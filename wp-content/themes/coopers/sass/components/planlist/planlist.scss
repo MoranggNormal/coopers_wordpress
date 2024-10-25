@@ -1,0 +1,93 @@
+.plan-list {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .card-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 320px;
+        min-height: 600px;
+        border-top-width: 20px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        background-color: white;
+
+        @media (min-width: 768px) {
+            width: 380px;
+        }
+
+        .top-list {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background-color: green;
+        }
+
+        .top-text {
+            text-align: center;
+            text-wrap: wrap;
+            padding: 1.5rem 0;
+            margin: 0 0.5rem;
+
+            h3 {
+                font-size: 40px;
+                font-weight: 600;
+            }
+
+            h4 {
+                font-size: 24px;
+                font-weight: 400;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .plans {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                padding: 0 1rem;
+                margin: 1rem 0;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+
+        button {
+            width: 300px;
+            height: 64px;
+            border-radius: 10px;
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 2rem;
+        }
+    }
+
+    .graphism {
+        position: absolute;
+        left: 0;
+        z-index: -20;
+    }
+}
