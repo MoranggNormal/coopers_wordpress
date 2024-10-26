@@ -1,0 +1,14 @@
+FROM node:17-alpine
+
+RUN apk add --no-cache g++ make py3-pip libc6-compat
+
+WORKDIR /var/www/html/wp-content/themes/coopers
+
+COPY package*.json ./
+
+RUN npm install
+# For some reason, node-sass from package.json won't work
+# So we install it manually
+RUN npm install -g node-sass@7
+
+CMD ["npm", "run", "watch"]

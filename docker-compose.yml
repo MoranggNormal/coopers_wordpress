@@ -33,17 +33,15 @@ services:
       - db
 
   nodejs:
-    image: node:17.9.1
-    container_name: nodejs
-    working_dir: /var/www/html/wp-content/themes/coopers
+    build:
+      context: ./wp-content/themes/coopers
+      dockerfile: Dockerfile.nodejs
     volumes:
       - ./wp-content:/var/www/html/wp-content
-    command: ./watch_sass.sh
-    restart: always
+      - /var/www/html/wp-content/node_modules
+    restart: "on-failure"
     depends_on:
       - wordpress
 
 volumes:
   db_data:
-
-
