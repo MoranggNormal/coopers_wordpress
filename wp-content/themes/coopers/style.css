@@ -1221,7 +1221,7 @@ textarea {
 
 .blog-section .blog-container {
 	position: relative;
-	width: 320px;
+	width: 310px;
 	height: 520px;
 	background-color: #4ac959;
 	padding: 10px 34px;
@@ -1230,25 +1230,25 @@ textarea {
 
 @media (min-width: 640px) {
 	.blog-section .blog-container {
-		width: 640px;
+		width: 630px;
 	}
 }
 
 @media (min-width: 740px) {
 	.blog-section .blog-container {
-		width: 740px;
+		width: 730px;
 	}
 }
 
 @media (min-width: 800px) {
 	.blog-section .blog-container {
-		width: 800px;
+		width: 790px;
 	}
 }
 
 @media (min-width: 1300px) {
 	.blog-section .blog-container {
-		width: 1300px;
+		width: 1080px;
 	}
 }
 
@@ -1365,21 +1365,22 @@ textarea {
 	color: #9499B3;
 }
 
-@media (min-width: 1024px) {
-	.blog-section .post .post-content .post-context a {
-		font-size: 16px;
-	}
-}
-
 .blog-section .post .post-content .post-excerpt {
-	max-width: 80%;
+	max-width: 85%;
+	font-size: 14px;
 	font-weight: 400;
 }
 
 .blog-section .post .post-content .read-more {
 	color: #4ac959;
-	font-size: 16;
+	font-size: 16px;
 	font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+	.blog-section .post .post-content {
+		font-size: 16px;
+	}
 }
 
 /* Contact
