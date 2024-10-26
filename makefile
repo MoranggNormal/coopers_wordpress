@@ -3,8 +3,11 @@ export $(shell sed 's/=.*//' .env)
 
 CONTAINER_NAME ?=
 
-build:
+build_dev:
 	docker compose up -d --build
+
+build_prod:
+	docker compose up -d --build db wordpress
 
 shell:
 	docker exec -it $(CONTAINER_NAME) /bin/sh
