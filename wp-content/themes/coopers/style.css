@@ -745,11 +745,6 @@ textarea {
 	display: block;
 }
 
-.post,
-.page {
-	margin: 0 0 1.5em;
-}
-
 .updated:not(.published) {
 	display: none;
 }
@@ -1504,6 +1499,82 @@ textarea {
 
 .contact-section .contact-form-container .contact-form .submit-button:hover {
 	transform: translateY(-0.5rem);
+}
+
+/* Footer
+--------------------------------------------- */
+.footer-section {
+	width: 100%;
+	height: 246px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.footer-section .background-overlay {
+	position: absolute;
+	top: 40px;
+	width: 200%;
+	height: 120%;
+	background-color: black;
+	transform: rotate(-2deg);
+	z-index: -20;
+}
+
+.footer-section .footer-content {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.footer-section .footer-content h3,
+.footer-section .footer-content h4 {
+	font-weight: 600;
+	color: white;
+	font-size: 24px;
+}
+
+.footer-section .footer-content h3 {
+	line-height: 20px;
+}
+
+.footer-section .footer-content h4 {
+	line-height: 18px;
+	margin-top: 32px;
+}
+
+.footer-section .footer-content h4 a {
+	color: white;
+	text-decoration: none;
+}
+
+.footer-section .footer-content h4 a:hover {
+	text-decoration: underline;
+}
+
+.footer-section .footer-content p {
+	margin-top: 16px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 29px;
+	color: white;
+}
+
+.footer-section .footer-bottom-overlay {
+	position: absolute;
+	bottom: -6px;
+	width: 50%;
+	height: 41px;
+	background-color: #4ac959;
+	transform: rotate(-1deg);
+	z-index: -10;
+}
+
+@media (min-width: 1024px) {
+	.footer-section .footer-bottom-overlay {
+		width: 40%;
+	}
 }
 
 /*--------------------------------------------------------------

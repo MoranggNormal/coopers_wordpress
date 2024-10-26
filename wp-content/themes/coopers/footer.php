@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -11,24 +12,20 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'coopers' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'coopers' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'coopers' ), 'coopers', '<a href="https://epeixoto.dev">Euller Peixoto</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+<footer class="footer-section">
+	<div class="background-overlay"></div>
+	<div class="footer-content">
+		<h3>Need help?</h3>
+		<h4><a href="mailto:coopers@coopers.pro">coopers@coopers.pro</a></h4>
+		<p>© 2021 Coopers. All rights reserved.</p>
+	</div>
+	<div class="footer-bottom-overlay"></div>
+</footer>
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>
