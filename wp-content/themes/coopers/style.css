@@ -932,18 +932,6 @@ textarea {
 	}
 }
 
-@media (min-width: 1536px) {
-	.hero-section {
-		padding-left: 400px;
-	}
-}
-
-@media (min-width: 1920px) {
-	.hero-section {
-		padding-left: 550px;
-	}
-}
-
 .hero-section .hero-content {
 	width: 55%;
 	margin-top: 208px;
@@ -1057,7 +1045,7 @@ textarea {
 
 /* TaskInfo
 --------------------------------------------- */
-#to-do-list {
+#task-info {
 	width: 100%;
 	height: 420px;
 	position: relative;
@@ -1067,16 +1055,16 @@ textarea {
 	overflow: hidden;
 }
 
-#to-do-list .background {
+#task-info .background {
 	position: absolute;
 	width: 200%;
-	height: 75%;
+	height: 70%;
 	background-color: black;
 	transform: rotate(-4deg);
 	z-index: -21;
 }
 
-#to-do-list h1 {
+#task-info h1 {
 	font-weight: bold;
 	font-family: "Poppins", sans-serif;
 	color: white;
@@ -1089,7 +1077,7 @@ textarea {
 	text-decoration-color: #4ac959;
 }
 
-#to-do-list p {
+#task-info p {
 	margin-top: 8px;
 	font-weight: normal;
 	color: white;
@@ -1100,12 +1088,12 @@ textarea {
 }
 
 @media (min-width: 768px) {
-	#to-do-list p {
+	#task-info p {
 		font-size: 24px;
 	}
 }
 
-#to-do-list p br {
+#task-info p br {
 	display: block;
 }
 

@@ -1,5 +1,5 @@
 <section
-    id="to-do-list">
+    id="task-info">
     <div class="background"></div>
     <div>
         <h1>
