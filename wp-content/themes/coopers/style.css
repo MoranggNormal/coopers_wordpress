@@ -951,19 +951,31 @@ textarea {
 
 .hero-section .hero-content .hero-title {
 	font-weight: bold;
-	font-size: 80px;
+	font-size: 50px;
 	line-height: 64px;
 	display: flex;
 	flex-direction: column;
 	position: relative;
 }
 
+@media (min-width: 1024px) {
+	.hero-section .hero-content .hero-title {
+		font-size: 80px;
+	}
+}
+
 .hero-section .hero-content .hero-title .hero-subtitle {
 	position: absolute;
 	top: 60px;
 	font-weight: normal;
-	font-size: 60px;
+	font-size: 21px;
 	color: #4ac959;
+}
+
+@media (min-width: 1024px) {
+	.hero-section .hero-content .hero-title .hero-subtitle {
+		font-size: 60px;
+	}
 }
 
 .hero-section .hero-content .hero-description {
@@ -985,21 +997,21 @@ textarea {
 	z-index: 20;
 	font-weight: bold;
 	color: white;
-	font-size: 24px;
+	font-size: 18px;
 	line-height: 29px;
 	width: 240px;
-	text-decoration: none;
 	height: 64px;
 	background-color: #4ac959;
 	border-radius: 10px;
 	transition: all 0.3s ease;
 	display: grid;
-	place-content: center;
+	place-items: center;
 }
 
 @media (min-width: 768px) {
 	.hero-section .hero-content .hero-button {
 		width: 300px;
+		font-size: 24px;
 	}
 }
 
