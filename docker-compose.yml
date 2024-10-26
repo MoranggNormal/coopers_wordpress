@@ -38,7 +38,6 @@ services:
     working_dir: /var/www/html/wp-content/themes/coopers
     volumes:
       - ./wp-content:/var/www/html/wp-content
-    # command: npm run watch
     command: ./watch_sass.sh
     restart: always
     depends_on:
