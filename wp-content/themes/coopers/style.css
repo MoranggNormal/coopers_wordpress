@@ -1093,9 +1093,16 @@ textarea {
 	margin-top: 8px;
 	font-weight: normal;
 	color: white;
-	font-size: 24px;
+	font-size: 18px;
 	line-height: 29px;
 	text-align: center;
+	padding: 0 1em;
+}
+
+@media (min-width: 768px) {
+	#to-do-list p {
+		font-size: 24px;
+	}
 }
 
 #to-do-list p br {
