@@ -4,7 +4,7 @@ This project was created based on the [Cooper's Front End Test](https://github.c
 
 Currently can be accessed at: [coopers.epeixoto.dev](https://coopers.epeixoto.dev)
 
-Credencials for Admin Panel will be shared with the Cooper evaluators via private chat
+Credencials for Admin Panel will be shared with Coopers' evaluators via private chat
 
 Features includes:
 
