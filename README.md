@@ -67,7 +67,7 @@ For other OS users, it may be not enough and you may have a bit more work. I can
 -  Select `Plans List` and edit `Plans Items` field.
 -  To add any other, you can simply duplicate on of them and edit `Field Label`, `Field Name` and `Default Value` for the `Text` Field and `Field Label`, `Field Name` and `Choices` for the `Available for` Field.
 
-# Choices:
+#### Choices:
 -  Choices items **must** match with Plans Field name'
 -  Example, for **Basic Plan** and **Pro Plan** we set it as:
  ```
@@ -94,8 +94,17 @@ pro : Pro
 - Scroll to bottom and you'll see many inputs where we can make changes:
 - ![image](https://github.com/user-attachments/assets/73505704-4fa5-47b0-92c7-77044931df90)
 
+### Adding new carousel items
+-  Go for wp-admin dashboard and find [Posts](https://coopers.epeixoto.dev/wp-admin/edit.php) in the menu.
+-  Click on Add New Post.
+-  Edit **Post Title** and go for the right Menu, set a **Fetatured Image** and an **Excerpt**
+-  Once you're done, you can proceed to Publish:
+-  ![image](https://github.com/user-attachments/assets/97a606df-27e1-4662-b4c1-6c28bcdc3fb0)
+-  Go to the Home Page and your new post should be at last on the Carousel:
+-  ![image](https://github.com/user-attachments/assets/8005e76c-2b2f-439d-a9a9-bf7b562ee88d)
 
-
-
+```diff
+- You can add many posts, but the carousel will show a maximum of 10.
+```
 
 
