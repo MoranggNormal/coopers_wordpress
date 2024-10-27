@@ -368,6 +368,7 @@ h3, h4 {
 
 html, body {
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 /* Box sizing
@@ -1389,6 +1390,12 @@ textarea {
 	width: 190px;
 	height: 190px;
 	border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+	.contact-section .image-wrapper {
+		top: -98px;
+	}
 }
 
 .contact-section .image-wrapper .woman-image {

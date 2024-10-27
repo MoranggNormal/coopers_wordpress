@@ -15,14 +15,14 @@
             the_field('Hero_paragraph');
             ?>
         </p>
-        <a href="#to-do-list" class="hero-button">
+        <a href="#task-info" class="hero-button">
             <?php
             the_field('hero_navigate_button');
             ?>
         </a>
     </div>
     <div class="hero-arrow-down">
-        <a href="#to-do-list">
+        <a href="#task-info">
             <img src="<?php echo the_field('arrow_down'); ?>" alt="arrow down" />
         </a>
     </div>
