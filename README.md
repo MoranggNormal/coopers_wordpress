@@ -100,7 +100,7 @@ pro : Pro
 -  Edit **Post Title** and go for the right Menu, set a **Fetatured Image** and an **Excerpt**
 -  Once you're done, you can proceed to Publish:
 -  ![image](https://github.com/user-attachments/assets/97a606df-27e1-4662-b4c1-6c28bcdc3fb0)
--  Go to the Home Page and your new post should be at last on the Carousel:
+-  Go to the [Home Page](https://coopers.epeixoto.dev) and your new post should be at last on the Carousel:
 -  ![image](https://github.com/user-attachments/assets/8005e76c-2b2f-439d-a9a9-bf7b562ee88d)
 
 ```diff
